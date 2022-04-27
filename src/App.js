@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Header from "./Components/Header"
 import useDarkMode from "./hooks/useDarkMode"
 import ContactUs from "./Pages/ContactUs"
+import Doctors from "./Pages/Doctors"
 import NotFound from "./Pages/NotFound"
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 			<div className="min-h-screen flex">
 				<Header handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} ></Header>
 				<Routes>
+					<Route path={"/doctors"} element={<Doctors></Doctors>}></Route>
 					<Route path={"/contact-us"} element={<ContactUs></ContactUs>}></Route>
 					<Route path={"*"} element={<NotFound></NotFound>}></Route>
 				</Routes>

@@ -6,7 +6,7 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 	const [show, setShow] = useState(true)
 
 	return (
-		<div className="h-screen z-50">
+		<div className="h-screen z-50 sticky top-0 left-0">
 			<div className="w-64 absolute sm:relative bg-gray-300 dark:bg-gray-800 shadow md:h-full flex-col justify-between hidden sm:flex">
 				<div className="px-8">
 					<div className="h-16 w-full flex items-center"></div>
@@ -14,9 +14,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/"}
@@ -29,9 +30,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/make-appointment"}
@@ -49,9 +51,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/doctors"}
@@ -67,9 +70,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/invoices"}
@@ -85,9 +89,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/dashboards"}
@@ -103,9 +108,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/contact-us"}
@@ -210,8 +216,7 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 								return isActive
 									? {
 											borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px",
+											boxShadow: "1px 1px 1px 1px",
 									  }
 									: {}
 							}}
@@ -228,9 +233,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/make-appointment"}
@@ -248,9 +254,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/doctors"}
@@ -263,9 +270,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/invoices"}
@@ -278,9 +286,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/dashboards"}
@@ -296,9 +305,10 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? {  borderBottom: "2px solid green",
-											boxShadow:
-												"2px 2px 2px 2px", }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow: "1px 1px 1px 1px",
+									  }
 									: { color: "" }
 							}}
 							to={"/contact-us"}
