@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function NotFound() {
 	return (
 		<div>
@@ -10,13 +12,13 @@ export default function NotFound() {
 									Looks like you've found the doorway to the
 									great nothing
 								</h1>
-								<p className="my-2 text-gray-800">
+								<p className="my-2 text-gray-800 mb-4">
 									Sorry about that! Please visit our hompage
 									to get where you need to go.
 								</p>
-								<button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">
+								<Link to={'/'} className="sm:w-full mt-4 lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">
 									Take me there!
-								</button>
+								</Link>
 							</div>
 						</div>
 						<div>
