@@ -1,7 +1,15 @@
+import Header from "./Components/Header"
+import useDarkMode from "./hooks/useDarkMode"
+
 function App() {
-	return <div>
-    
-  </div>
+	const { isDarkMode, handleDarkMode } = useDarkMode()
+	return (
+		<div className={isDarkMode && "dark"}>
+			<div className="min-h-screen">
+        <Header></Header>
+      </div>
+		</div>
+	)
 }
 
 export default App
