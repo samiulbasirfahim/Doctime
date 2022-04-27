@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { MdDarkMode, MdLightMode } from "react-icons/md"
 
-const Header = ({ handleDarkMode , isDarkMode}) => {
+const Header = ({ handleDarkMode, isDarkMode }) => {
 	const [show, setShow] = useState(false)
 
 	return (
@@ -73,10 +74,17 @@ const Header = ({ handleDarkMode , isDarkMode}) => {
 						</NavLink>
 						<button
 							onClick={handleDarkMode}
-							className="flex w-full justify-between text-gray-700 hover:text-gray-500 cursor-pointer items-center dark:text-gray-100"
+							className="flex w-full justify-center text-gray-700 hover:text-gray-500 cursor-pointer items-center dark:text-gray-100"
 						>
+							{!isDarkMode ? (
+								<MdLightMode></MdLightMode>
+							) : (
+								<MdDarkMode></MdDarkMode>
+							)}
 							<div className="flex items-center">
-								<span className="text-sm  ml-2">{isDarkMode ? "Light Mode" : "Dark Mode"}</span>
+								<span className="text-sm  ml-2">
+									{!isDarkMode ? "Light Mode" : "Dark Mode"}
+								</span>
 							</div>
 						</button>
 					</ul>
@@ -217,10 +225,17 @@ const Header = ({ handleDarkMode , isDarkMode}) => {
 						</NavLink>
 						<button
 							onClick={handleDarkMode}
-							className="flex w-full justify-between text-gray-700 hover:text-gray-500 cursor-pointer items-center dark:text-gray-100"
+							className="flex w-full justify-center text-gray-700 hover:text-gray-500 cursor-pointer items-center dark:text-gray-100"
 						>
+							{!isDarkMode ? (
+								<MdLightMode></MdLightMode>
+							) : (
+								<MdDarkMode></MdDarkMode>
+							)}
 							<div className="flex items-center">
-								<span className="text-sm  ml-2">Settings</span>
+								<span className="text-sm  ml-2">
+									{!isDarkMode ? "Light Mode" : "Dark Mode"}
+								</span>
 							</div>
 						</button>
 					</ul>
