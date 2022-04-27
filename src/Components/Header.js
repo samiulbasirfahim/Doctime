@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { MdDarkMode, MdLightMode } from "react-icons/md"
 
 const Header = ({ handleDarkMode, isDarkMode }) => {
@@ -7,7 +7,7 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 
 	return (
 		<div className="h-screen z-50 sticky top-0 left-0">
-			<div className="w-64 absolute sm:relative bg-gray-300 dark:bg-gray-800 shadow md:h-full flex-col justify-between hidden sm:flex">
+			<div className="w-64 absolute sm:relative bg-gray-300 dark:bg-gray-600 shadow md:h-full flex-col justify-between hidden sm:flex">
 				<div className="px-8">
 					<div className="h-16 w-full flex items-center"></div>
 					<ul className="mt-12">
@@ -95,11 +95,11 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 									  }
 									: { color: "" }
 							}}
-							to={"/dashboards"}
+							to={"/testimonials"}
 							className="flex w-full justify-between text-gray-700 hover:text-gray-500 cursor-pointer items-center mb-6 dark:text-gray-100"
 						>
 							<div className="flex items-center">
-								<span className="   ml-2">Dashboard</span>
+								<span className="   ml-2">Testimonials</span>
 							</div>
 							<div className="py-1 px-3 bg-gray-400 dark:bg-gray-700 rounded text-gray-500 flex items-center justify-center text-xs">
 								25
@@ -176,7 +176,7 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 				id="mobile-nav"
 			>
 				<div
-					className="h-10 w-10  bg-gray-800  absolute  right-0 mt-16 -mr-10 flex items-center shadow rounded-tr rounded-br justify-center cursor-pointer"
+					className="h-10 w-10  bg-gray-800 dark:bg-gray-400  absolute  right-0 mt-16 -mr-10 flex items-center shadow rounded-tr rounded-br justify-center cursor-pointer"
 					id="mobile-toggler"
 					onClick={() => setShow(!show)}
 				>
@@ -292,11 +292,11 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 									  }
 									: { color: "" }
 							}}
-							to={"/dashboards"}
+							to={"/testimonials"}
 							className="flex w-full justify-between text-gray-700 hover:text-gray-500 cursor-pointer items-center mb-6 dark:text-gray-100"
 						>
 							<div className="flex items-center">
-								<span className="   ml-2">Dashboard</span>
+								<span className="   ml-2">Testimonials</span>
 							</div>
 							<div className="py-1 px-3 bg-gray-400 dark:bg-gray-700 rounded text-gray-500 flex items-center justify-center text-xs">
 								25

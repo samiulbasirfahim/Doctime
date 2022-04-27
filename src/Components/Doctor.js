@@ -2,8 +2,8 @@ import React from "react"
 
 const Doctor = () => {
 	return (
-		<div className="relative mt-16 mb-32 sm:mb-24">
-			<div className="rounded overflow-hidden shadow-md bg-white">
+		<div className="relative mt-16 mb-32 sm:mb-24 bg-white dark:bg-gray-600">
+			<div className="rounded overflow-hidden shadow-md ">
 				<div className="absolute -mt-20 w-full flex justify-center">
 					<div className="h-32 w-32">
 						<img
@@ -13,14 +13,14 @@ const Doctor = () => {
 						/>
 					</div>
 				</div>
-				<div className="px-6 mt-16">
+				<div className="px-6 mt-16 ">
 					<div className="font-bold text-3xl text-center pb-1">
 						Andres Berlin
 					</div>
-					<p className="text-gray-800 text-sm text-center">
+					<p className="text-gray-800 dark:text-gray-200 text-sm text-center">
 						Chief Executive Officer
 					</p>
-					<p className="text-center text-gray-600 text-base pt-3 font-normal">
+					<p className="text-center text-gray-600 dark:text-gray-200 text-base pt-3 font-normal">
 						The CEO's role in raising a company's corporate IQ is to
 						establish an atmosphere that promotes knowledge sharing
 						and collaboration.
