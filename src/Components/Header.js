@@ -14,7 +14,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/"}
@@ -27,7 +29,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/make-appointment"}
@@ -45,7 +49,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/doctors"}
@@ -61,7 +67,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/invoices"}
@@ -77,7 +85,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/dashboards"}
@@ -93,7 +103,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/contact-us"}
@@ -158,7 +170,7 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 				id="mobile-nav"
 			>
 				<div
-					className="h-10 w-10 bg-gray-300 dark:bg-gray-800  absolute right-0 mt-16 -mr-10 flex items-center shadow rounded-tr rounded-br justify-center cursor-pointer"
+					className="h-10 w-10  bg-gray-800  absolute  right-0 mt-16 -mr-10 flex items-center shadow rounded-tr rounded-br justify-center cursor-pointer"
 					id="mobile-toggler"
 					onClick={() => setShow(!show)}
 				>
@@ -196,8 +208,12 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
-									: { color: "" }
+									? {
+											borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px",
+									  }
+									: {}
 							}}
 							to={"/"}
 							className="flex w-full justify-between text-gray-700 hover:text-gray-500 cursor-pointer items-center mb-6 dark:text-gray-100"
@@ -212,7 +228,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/make-appointment"}
@@ -230,7 +248,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/doctors"}
@@ -243,7 +263,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/invoices"}
@@ -256,7 +278,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/dashboards"}
@@ -272,7 +296,9 @@ const Header = ({ handleDarkMode, isDarkMode }) => {
 						<NavLink
 							style={({ isActive }) => {
 								return isActive
-									? { color: "blue" }
+									? {  borderBottom: "2px solid green",
+											boxShadow:
+												"2px 2px 2px 2px", }
 									: { color: "" }
 							}}
 							to={"/contact-us"}

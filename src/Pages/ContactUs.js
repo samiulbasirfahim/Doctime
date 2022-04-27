@@ -1,13 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
 
 function ContactUs() {
-	const [show, setShow] = useState(false)
 	return (
 		<div className="bg-gradient-to-b from-purple-600 to-indigo-700 h-96 w-full">
 			<div className="w-full flex items-center justify-center my-12">
 				<form className="absolute top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
 					<p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
-						Let’s chat and get a quote!
+						Let's chat and get a quote!
 					</p>
 					<div className="md:flex items-center mt-12">
 						<div className="md:w-72 flex flex-col">
@@ -70,9 +69,10 @@ function ContactUs() {
 							<textarea
 								tabIndex={0}
 								aria-label="leave a message"
-								role="textbox"
+								// eslint-disable-next-line jsx-a11y/aria-role
+								role="textbook"
 								type="name"
-								className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
+								className="h-36 text-base leading-none text-gray-900 p-3 focus:outline-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
 								defaultValue={""}
 							/>
 						</div>
